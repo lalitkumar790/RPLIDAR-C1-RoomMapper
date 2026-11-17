@@ -10,6 +10,10 @@ Indoor 2D laser scanning and experimental room mapping using a **Raspberry Pi 5 
 - User `lalit` is already in `dialout`; ROS 2 is not installed
 - **Next verification:** test live measurements with upstream SDK. USB detection alone does not confirm sensor data.
 
+## 3D mapping extension
+
+We now have a proof-of-concept coordinate conversion for **real, calibrated tilted scans**. See [3D scanning plan](docs/3d-mapping.md) and [CSV to PLY converter](scripts/scans_to_ply.py). A horizontal scan alone cannot make a genuine 3D map. No tilt hardware or multi-pose registration has been validated yet.
+
 ## Milestones
 
 - [ ] M0 — Connect to Raspberry Pi by SSH, identify OS/architecture and USB serial adapter
