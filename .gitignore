@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+# ROS workspaces
+build/
+install/
+log/
+# OS/editor
+.DS_Store
+.vscode/
+# Private maps and raw recorded sensor data (opt in intentionally)
+maps/*.pgm
+maps/*.yaml
+maps/*.png
+*.db3
+*.mcap
+# Local credentials
+.env
+*.pem
+id_rsa
+id_ed25519
